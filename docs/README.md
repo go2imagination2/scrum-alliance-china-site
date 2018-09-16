@@ -1,3 +1,0 @@
-Scrum Alliance 
-
-README
