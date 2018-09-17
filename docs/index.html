@@ -372,7 +372,7 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
       <div class="row">
         <div class="header-utility-nav col-sm-12 clearfix">
           <div class="header-utility-nav-text">
-            <a href="https://www.uperform.cn/scrum-certification-course/"><strong>获取认证</strong></a>&nbsp;- 立刻改变你的工作方式
+            <a href="https://www.uperform.cn/scrum-certification-course/"><strong>获取认证</strong></a>&nbsp;- 立刻蜕变你的工作方式
 
 
 
@@ -440,7 +440,7 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
         
 <ul>
   <li>
-    <a href="//www.scrumalliance.org/certifications/certifications2017">Get<br/>Certified<br/>获取认证</a>
+    <a href="//www.scrumalliance.org/certifications/certifications2017">获取认证</a>
     <ul>
   <li class="second-level">
     <a href="//www.scrumalliance.org/certifications/practitioners/csm-certification">Certified ScrumMaster<sup>®</sup> (CSM<sup>®</sup>)</a>
@@ -492,7 +492,7 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
 </li>
 </ul>
   </li>  <li>
-    <a href="https://membership.scrumalliance.org/">Become<br/>a Member<br/>成为会员</a>
+    <a href="https://membership.scrumalliance.org/">成为会员</a>
     <ul>
   <li class="second-level">
     <a href="http://membership.scrumalliance.org/">New Community</a>
@@ -512,7 +512,7 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
   </li>
 </ul><!--/ level 1-->
   </li>  <li>
-    <a href="//www.scrumalliance.org/courses-events/events/search">Attend<br/>An Event<br/>参加活动</a>
+    <a href="//www.scrumalliance.org/courses-events/events/search">参加活动</a>
     <ul>
   <li class="second-level">
     <a href="//www.scrumalliance.org/courses-events/events/global-gatherings">Global Scrum Gatherings<sup>&#8480;</sup></a>
@@ -539,7 +539,7 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
 </li>
 </ul>
   </li>  <li>
-    <a href="//www.scrumalliance.org/Learn-About-Scrum">About<br/>Scrum<br/>关于Scrum</a>
+    <a href="//www.scrumalliance.org/Learn-About-Scrum">关于Scrum</a>
     <ul>
   <li class="second-level">
     <a href="//www.scrumalliance.org/why-scrum/the-scrum-guide">The Scrum Guide</a>
@@ -568,7 +568,7 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
   </li>
 </ul><!--/ level 1-->
   </li>  <li>
-    <a href="//www.scrumalliance.org/why-scrum/resources">Professional<br/>Development<br/>职业发展</a>
+    <a href="//www.scrumalliance.org/why-scrum/resources">职业发展</a>
     <ul>
   <li class="second-level sub-nav-column">
     <span class="sub-nav-label">Content Resources</span>
@@ -622,21 +622,25 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
 </script>
 
 <div class="hero-course-search col-xs-12 col-sm-6 col-lg-6">
-    <div id="divContentCSMP" style="display: none">
+    <div id="divContentCSMP" style="">
         <div class="form-group">
-            <select id="ddlCourseType" class="form-control"></select>
+            <select id="ddlCourseType" class="form-control"><option value="">所有课程</option><option value="Csm">Certified ScrumMaster®</option><option value="Cspo">Certified Scrum Product Owner®</option><option value="Csd">Certified Scrum Developer® Track</option><option value="Cal1">Certified Agile Leadership I</option><option value="AdvCsm">Advanced Certified ScrumMaster®</option><option value="AdvCspo">Advanced Certified Scrum Product Owner®</option><option value="Aevp">CAL II—Advanced Education and Validated Practice</option><option value="CspSm">Certified Scrum Professional - ScrumMaster®</option><option value="Scaling">Scaling</option><option value="Pw">CAL II—Peer Workshop</option><option value="Other">Continuing Education</option></select>
         </div>
         <div class="form-group">
-            <select id="ddlCountry" class="form-control"></select>
+            <select id="ddlCountry" class="form-control"><option value="">大中华区</option><option value="CN">中国大陆</option><option value="HK">香港</option><option value="TW">台湾</option></select>
         </div>
         <div class="form-group">
-            <input id="datepickerStart" type="text" value="05/09/2018" class="datepicker form-control" />
+            <input id="datepickerStart" type="text" value="05/09/2018" class="datepicker form-control">
         </div>
         <div class="form-group">
-            <input id="btnSearch" type="submit" value="Search" class="btn btn-primary" />
+            <!-- <input id="btnSearch" type="submit" value="Search" class="btn btn-primary"> -->
+			<a href="http://www.uperform.cn/recent-public-course/" id="btnSearch" type="submit" value="Search" class="btn btn-primary" target="_blank">查找</a>
+
         </div>
     </div>
 </div>
+
+
     </div>
   </div>
 </section>
@@ -692,7 +696,7 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
 
 <p>通过培养协作、生产力和团队成员之间的成功，Scrum培训与认证实现敏捷宣言的愿景。Scrum联盟最新的渐进式课程模型提供了一个为期2年的阶梯来提升Scrum知识，打造技能，提供所需的工具来进化成为一名ScrumMaster、Product Owner或开发实践者。<br />
 <br />
-<strong>Foundational Certification Pathway for Certified ScrumMaster</strong></p>
+<strong>针对Scrum Master的基础级认证路径</strong></p>
 
 
 
@@ -705,15 +709,16 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
   <li class="get-certified__list__badge"><img src="//www.scrumalliance.org/_scrum/images/CSM_ConceptsR2-04.png" /></li>
   <li class="get-certified__list__arrow"><img src="//www.scrumalliance.org/_scrum/images/cert-arrow-primary.png" /></li>
   <li class="get-certified__list__label">Elevated Certifications</li>
-</ul><div class="get-certified__btn"><a id="p_lt_WebPartZone9_Placeholder_PP_p_lt_WebPartZone5_SectionGetCertified_SectionGetCertifiedLinkButton_btnElem_hyperLink" class="btn btn--secondary" href="/get-certified"><span id="p_lt_WebPartZone9_Placeholder_PP_p_lt_WebPartZone5_SectionGetCertified_SectionGetCertifiedLinkButton_btnElem_lblText">Explore Certifications 探索认证体系</span></a>
+</ul><div class="get-certified__btn"><a id="p_lt_WebPartZone9_Placeholder_PP_p_lt_WebPartZone5_SectionGetCertified_SectionGetCertifiedLinkButton_btnElem_hyperLink" class="btn btn--secondary" href="/get-certified"><span id="p_lt_WebPartZone9_Placeholder_PP_p_lt_WebPartZone5_SectionGetCertified_SectionGetCertifiedLinkButton_btnElem_lblText">探索认证体系</span></a>
 </div>
       </div>
       <div class="join-scrum-alliance col-sm-6 text-center">
         <div class="join-scrum-alliance__image"><img id="p_lt_WebPartZone9_Placeholder_PP_p_lt_WebPartZone6_SectionBecomeMember_eiJS_ucEditableImage_imgImage" src="//www.scrumalliance.org/ScrumRedesignDEVSite/media/images/HomeSectionBecomeMember2.png" alt="" />
 
-</div><h2 style="font-size: 2.5rem; color: black;">Join Us</h2>
+</div><h2 style="font-size: 2.5rem; color: black;">加入我们</h2>
 
-<p>The largest, most established, and influential professional Agile membership and certification organization with more than 450,000 practitioners.</p>
+<p>全球最大、最完善、最具影响力的专业敏捷社团及认证机构，拥有超过45万名实践者。</p>
+<!-- <p>The largest, most established, and influential professional Agile membership and certification organization with more than 450,000 practitioners.</p> -->
 
 
 
@@ -769,7 +774,7 @@ Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [
   <div class="container">
     <div class="row">
       <div class="find-jobs col-sm-6">
-        <h2>Job Search</h2>
+        <h2>寻找工作机会</h2>
         
 
 <div class="find-job-form">
